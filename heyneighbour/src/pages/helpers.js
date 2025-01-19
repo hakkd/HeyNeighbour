@@ -5,11 +5,19 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function Helpers({ postalCode, jobType }) {
+  const router = useRouter();
+  const { query } = router;
+
+  // Safely access query parameters
+  const title = query?.title || '';
+  const description = query?.description || '';
+  const date = query?.date || '';
+  const jobTypeQuery = query?.jobType || '';
+
+  console.log(title, description, date, jobTypeQuery);
+
   const [helpers, setHelpers] = useState([]);
   const [loading, setLoading] = useState(true);
-  const router = useRouter();
-  const favour = router.query?.favour ? JSON.parse(router.query.favour) : {};
-  console.log('Favour:', favour);
 
   useEffect(() => {
     async function fetchHelpers() {
@@ -31,7 +39,7 @@ export default function Helpers({ postalCode, jobType }) {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ helperId, favour }),
+          body: JSON.stringify({ helperId }),
         });
 
         if (!response.ok) {
@@ -58,8 +66,24 @@ export default function Helpers({ postalCode, jobType }) {
       <h1>Helpers in Your Area</h1>
       <div style={{ display: 'flex', overflowX: 'scroll' }}>
         {helpers.map((helper) => (
-          <div key={helper.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px', minWidth: '200px' }}>
-            {helper.image && <Image src={`data:image/jpeg;base64,${helper.image}`} alt={helper.name} style={{ width: '100px', height: '100px', objectFit: 'cover' }} />}
+          <div
+            key={helper.id}
+            style={{
+              border: '1px solid #ccc',
+              margin: '10px',
+              padding: '10px',
+              minWidth: '200px',
+            }}
+          >
+            {helper.image && (
+              <Image
+                src={`data:image/jpeg;base64,${helper.image}`}
+                alt={helper.name}
+                width={100}
+                height={100}
+                style={{ objectFit: 'cover' }}
+              />
+            )}
             <h2>{helper.name}</h2>
             <p>Email: {helper.email}</p>
             <p>Postal Code: {helper.postalCode}</p>
@@ -75,9 +99,8 @@ export default function Helpers({ postalCode, jobType }) {
 
 // This function gets called at build time
 export async function getServerSideProps(context) {
-  // Fetch the current user's postal code and job type from your authentication system or query parameters
-  const postalCode = 'A1A 1A1'; // Replace with actual postal code fetching logic
-  const jobType = 'manual labour'; // Replace with actual job type fetching logic
+  const postalCode = 'A1A 1A1';
+  const jobType = 'manual labour';
 
   return {
     props: {
