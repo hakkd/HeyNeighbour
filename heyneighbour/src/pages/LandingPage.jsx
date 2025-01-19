@@ -1,4 +1,4 @@
-import styles from '../page.module.css';
+import styles from '../app/cssFiles/landingPage.module.css';
 import Link from 'next/link'
 
 const LandingPage = () => {
@@ -19,7 +19,9 @@ const LandingPage = () => {
         <div className={styles.signUpButtonParent}>
         {/* <div className={styles.signUpButton}> */}
             {/* <div className={styles.signUpButtonChild} /> */}
+            <Link href="/SignUpPage">
                 <button className={styles.signUp}>SIGN UP</button>
+            </Link>
             {/* </div> */}
             {/* <div className={styles.loginButton}> */}
                 {/* <div className={styles.loginButtonChild} /> */}

@@ -1,6 +1,6 @@
 
-import styles from "./page.module.css";
-import LandingPage from "../app/components/LandingPage"
+import styles from "./cssFiles/landingPage.module.css";
+import LandingPage from "../pages/LandingPage"
 
 export default function Home() {
   return (

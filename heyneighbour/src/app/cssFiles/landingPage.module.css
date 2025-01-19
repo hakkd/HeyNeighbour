@@ -1,0 +1,160 @@
+.landingPageChild {
+    position: absolute;
+    top: 52px;
+    left: 246px;
+    width: 503.4px;
+    height: 400px;
+    object-fit: contain;
+  }
+  .textLogo {
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 521px);
+    width: 1042px;
+    height: 668px;
+    object-fit: cover;
+  }
+  .testimonials {
+    position: absolute;
+    top: 52px;
+    left: 224px;
+    display: inline-block;
+    width: 219px;
+    height: 29px;
+  }
+  .home {
+    position: absolute;
+    top: 52px;
+    left: 77px;
+    color: #ef476f;
+    display: inline-block;
+    width: 219px;
+    height: 29px;
+  }
+  .aboutUs {
+    position: absolute;
+    top: 52px;
+    left: 494px;
+    display: inline-block;
+    width: 219px;
+    height: 29px;
+  }
+  .vectorIcon {
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    width: 760.8px;
+    height: 600;
+    object-fit: contain;
+  }
+  .vectorIcon1 {
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    top: 20%;
+    right: 0%;
+    bottom: 0%;
+    left: 10%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .faceLIcon {
+    position: absolute;
+    height: 11.25%;
+    width: 13.1%;
+    top: 35%;
+    right: 24.87%;
+    bottom: 60.58%;
+    left: 50%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .component4 {
+    position: absolute;
+    top: 74.59px;
+    left: -232px;
+    width: 778.6px;
+    height: 775.3px;
+  }
+  .faceRIcon {
+    position: absolute;
+    top: 380px;
+    left: 1280px;
+    width: 102px;
+    height: 87.2px;
+  }
+  .landingPageItem {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width: 477px;
+    height: 374.7px;
+    object-fit: contain;
+  }
+  
+  .signUpButtonParent {
+    position: absolute;
+    top: 600px;
+    left: calc(50% - 312px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .signUp {
+    position: absolute;
+    top: calc(50% - 32.5px);
+    left: calc(50% - 92.5px);
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    font-family: Lalezar;
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: #c7def9;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    width: 259px;
+    height: 105px;
+  }
+  
+  .signUp:hover {
+    background-color: #8bc0ff;
+  }
+  
+  
+  .logIn {
+    position: absolute;
+    top: calc(50% - 32.5px);
+    left: calc(50% + 450.5px);
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    font-family: Lalezar;
+    border-radius: 22px;
+    cursor: pointer;
+    background-color: #c7def9;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    width: 259px;
+    height: 105px;
+  }
+  
+  .logIn:hover {
+    background-color: #8bc0ff;
+  }
+  
+  .landingPage {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: 'MS PGothic';
+  }

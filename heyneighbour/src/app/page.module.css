@@ -1,74 +1,29 @@
 
-/* .redBlob{
-  position: absolute;
-  top: 50px;
-  left: -100px;
-}
 
-.greenBlob{
+.groupChild {
   position: absolute;
-  left: 1150px;
-  top: -40px;
-} */
-
-
-.landingPageChild {
-  position: absolute;
-  top: 52px;
-  left: 246px;
-  width: 503.4px;
-  height: 400px;
-  object-fit: contain;
+  top: 0px;
+  left: 0px;
+  border-radius: 59px;
+  background-color: #f0f0f0;
+  width: 1001px;
+  height: 477px;
 }
-.textLogo {
+.registration1Inner {
   position: absolute;
-  top: 50px;
-  left: calc(50% - 521px);
-  width: 1042px;
-  height: 668px;
-  object-fit: cover;
-}
-.testimonials {
-  position: absolute;
-  top: 52px;
-  left: 224px;
-  display: inline-block;
-  width: 219px;
-  height: 29px;
-}
-.home {
-  position: absolute;
-  top: 52px;
-  left: 77px;
-  color: #ef476f;
-  display: inline-block;
-  width: 219px;
-  height: 29px;
-}
-.aboutUs {
-  position: absolute;
-  top: 52px;
-  left: 494px;
-  display: inline-block;
-  width: 219px;
-  height: 29px;
+  top: 273px;
+  left: 280px;
+  width: 1001px;
+  height: 477px;
 }
 .vectorIcon {
   position: absolute;
-  top: 250px;
-  left: 1000px;
-  width: 760.8px;
-  height: 600;
-  object-fit: contain;
-}
-.vectorIcon1 {
-  position: absolute;
-  height: 70%;
-  width: 70%;
-  top: 20%;
+  height: 100%;
+  width: 100%;
+  top: 0%;
   right: 0%;
   bottom: 0%;
-  left: 10%;
+  left: 0%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -78,97 +33,121 @@
   position: absolute;
   height: 11.25%;
   width: 13.1%;
-  top: 35%;
+  top: 28.17%;
   right: 24.87%;
   bottom: 60.58%;
-  left: 50%;
+  left: 62.03%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
 .component4 {
   position: absolute;
-  top: 74.59px;
-  left: -232px;
+  top: 491px;
+  left: -253px;
   width: 778.6px;
   height: 775.3px;
 }
-.faceRIcon {
+.areYouHere {
   position: absolute;
-  top: 380px;
-  left: 1280px;
-  width: 102px;
-  height: 87.2px;
+  top: 466px;
+  left: 452px;
+  display: inline-block;
+  width: 745px;
+  height: 203px;
 }
-.landingPageItem {
+.letsGetStarted {
   position: absolute;
-  top: 100px;
-  left: 900px;
-  width: 477px;
-  height: 374.7px;
-  object-fit: contain;
+  top: 418px;
+  left: 658px;
+  font-size: 40px;
+  display: inline-block;
+  width: 333px;
+  height: 42px;
 }
-
-.signUpButtonParent {
+.component6Icon {
   position: absolute;
-  top: 600px;
-  left: calc(50% - 312px);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.signUp {
-  position: absolute;
-  top: calc(50% - 32.5px);
-  left: calc(50% - 92.5px);
-  text-align: center;
-  font-size: 50px;
-  color: #000;
-  font-family: Lalezar;
+  top: 666px;
+  left: 924px;
+  width: 167px;
+  height: 167px;
   cursor: pointer;
-  border-radius: 22px;
-  background-color: #c7def9;
-  border: 3px solid #000;
-  box-sizing: border-box;
-  width: 259px;
-  height: 105px;
 }
-
-.signUp:hover {
-  background-color: #8bc0ff;
-}
-
-
-.logIn {
+.registration1Child {
   position: absolute;
-  top: calc(50% - 32.5px);
-  left: calc(50% + 450.5px);
-  text-align: center;
-  font-size: 50px;
-  color: #000;
-  font-family: Lalezar;
-  border-radius: 22px;
+  top: 532px;
+  left: 2686px;
+  width: 134px;
+  height: 134px;
+}
+.component5Icon {
+  position: absolute;
+  top: 666px;
+  left: 1111px;
+  width: 167px;
+  height: 167px;
   cursor: pointer;
-  background-color: #c7def9;
-  border: 3px solid #000;
-  box-sizing: border-box;
-  width: 259px;
-  height: 105px;
 }
-
-.logIn:hover {
-  background-color: #8bc0ff;
+.textLogo {
+  position: absolute;
+  height: 100%;
+  width: 23.77%;
+  top: 0%;
+  right: 76.23%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
 }
-
-.landingPage {
+.testimonials {
+  position: absolute;
+  height: 13.36%;
+  width: 19.87%;
+  top: 30.88%;
+  left: 21.63%;
+  font-weight: 900;
+  display: inline-block;
+}
+.aboutUs {
+  position: absolute;
+  height: 13.36%;
+  width: 19.87%;
+  top: 30.88%;
+  left: 39.54%;
+  font-weight: 900;
+  display: inline-block;
+}
+.myProfile {
+  position: absolute;
+  height: 13.36%;
+  width: 15.38%;
+  top: 26.73%;
+  left: 84.62%;
+  font-weight: 900;
+  color: #ef476f;
+  display: inline-block;
+}
+.component13 {
+  position: absolute;
+  height: 21.19%;
+  width: 98.89%;
+  top: 0%;
+  right: 1.11%;
+  bottom: 78.81%;
+  left: 0%;
+  font-size: 32px;
+  font-family: 'Zen Maru Gothic';
+}
+.registration1 {
   width: 100%;
   position: relative;
   background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
   height: 1024px;
   overflow: hidden;
   text-align: left;
-  font-size: 32px;
+  font-size: 64px;
   color: #000;
   font-family: 'MS PGothic';
 }
