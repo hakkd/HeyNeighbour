@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Helpers from "./pages/helpers";
+import Helpers from "../pages/helpers";
 
 export default function Home() {
   return (

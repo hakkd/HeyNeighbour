@@ -1,4 +1,4 @@
-import dbPromise from "../../../../database/sqlite";
+import dbPromise from "../../../database/sqlite";
 
 export default async function handler(req, res) {
   const db = await dbPromise;
