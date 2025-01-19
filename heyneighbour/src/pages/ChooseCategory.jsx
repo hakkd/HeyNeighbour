@@ -16,7 +16,7 @@ const ChooseCategory = () => {
         <img className={styles.vectorIcon} alt="" src="../Vector.svg" />
         <img className={styles.faceLIcon} alt="" src="Face L.svg" />
       </div>
-      <div className={styles.youreASuperstar}>You’re a superstar! Which category would you like to help in?</div>
+      <div className={styles.youreASuperstar}>You're a superstar! Which category would you like to help in?</div>
       <img className={styles.choosecategoryChild} alt="" src="Group 8.svg" />
       <div className={styles.choosecategoryItem} />
       <div className={styles.ellipseDiv} />
