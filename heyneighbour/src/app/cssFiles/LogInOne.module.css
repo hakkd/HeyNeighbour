@@ -1,0 +1,116 @@
+.textLogo {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 746px);
+    width: 338.5px;
+    height: 217px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.testimonials {
+    position: absolute;
+    top: 52px;
+    left: 224px;
+    display: inline-block;
+    width: 219px;
+    height: 29px;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    top: 52px;
+    left: 493px;
+    display: inline-block;
+    width: 219px;
+    height: 29px;
+    cursor: pointer;
+}
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+    width: 1001px;
+    height: 477px;
+}
+.loginoneInner {
+    position: absolute;
+    top: 273px;
+    left: 280px;
+    width: 1001px;
+    height: 477px;
+}
+.email {
+    position: absolute;
+    top: 512px;
+    left: 367px;
+    font-size: 64px;
+    font-family: 'MS PGothic';
+    display: inline-block;
+    width: 238px;
+    height: 68px;
+}
+.welcomeBackPlease {
+    position: absolute;
+    top: 418px;
+    left: 452px;
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    width: 740px;
+    height: 42px;
+}
+.loginoneChild {
+    position: absolute;
+    top: 532px;
+    left: 2686px;
+    width: 134px;
+    height: 134px;
+}
+.component5Icon {
+    position: absolute;
+    top: 666px;
+    left: 1111px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+}
+.loginoneItem {
+    position: absolute;
+    top: 516px;
+    left: 743px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 438px;
+    height: 64px;
+}
+.rectangleDiv {
+    position: absolute;
+    top: 516px;
+    left: 605px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 576px;
+    height: 64px;
+}
+.blueBlobIcon {
+    position: absolute;
+    top: -244px;
+    left: 822px;
+    width: 846.6px;
+    height: 842.5px;
+    object-fit: contain;
+}
+.loginone {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+

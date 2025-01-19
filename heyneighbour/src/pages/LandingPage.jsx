@@ -25,7 +25,9 @@ const LandingPage = () => {
             {/* </div> */}
             {/* <div className={styles.loginButton}> */}
                 {/* <div className={styles.loginButtonChild} /> */}
+                    <Link href="/LogInOne">
                     <button className={styles.logIn}>LOG IN</button>
+                    </Link>
                 {/* </div> */}
             </div>
         </div>

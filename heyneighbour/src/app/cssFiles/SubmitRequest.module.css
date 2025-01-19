@@ -1,0 +1,140 @@
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+    width: 1001px;
+    height: 570px;
+}
+.torontoOn {
+    font-size: 32px;
+    font-family: 'MS PGothic';
+}
+.maryTorontoContainer {
+    position: absolute;
+    top: 47px;
+    left: 130px;
+}
+.iHopeYoure {
+    position: absolute;
+    top: 169px;
+    left: 130px;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+    display: inline-block;
+    width: 846px;
+    height: 157px;
+}
+.rectangleParent {
+    position: absolute;
+    top: 330px;
+    left: 278px;
+    width: 1001px;
+    height: 570px;
+    font-size: 48px;
+}
+.submitYourRequest {
+    position: absolute;
+    top: 181px;
+    left: 136px;
+    font-size: 96px;
+}
+.titleINeed {
+    position: absolute;
+    top: 429px;
+    left: 410px;
+    display: inline-block;
+    font-family: 'MS PGothic';
+    width: 517px;
+}
+.component5Icon {
+    position: absolute;
+    top: 813px;
+    left: 1109px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+}
+.to {
+    position: absolute;
+    top: 358px;
+    left: 333px;
+    display: inline-block;
+    font-family: 'MS PGothic';
+    width: 51px;
+    height: 64px;
+}
+.div {
+    position: absolute;
+    top: 831px;
+    left: 313px;
+    font-family: 'MS PGothic';
+    display: inline-block;
+    width: 158px;
+    height: 52px;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component12 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1424px;
+    height: 217px;
+    font-family: 'MS PGothic';
+}
+.submitrequest {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+

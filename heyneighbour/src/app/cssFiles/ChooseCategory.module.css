@@ -1,0 +1,327 @@
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+    width: 1001px;
+    height: 477px;
+}
+.choosecategoryInner {
+    position: absolute;
+    top: 273px;
+    left: 280px;
+    width: 1001px;
+    height: 477px;
+}
+.vectorIcon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.faceLIcon {
+    position: absolute;
+    height: 11.25%;
+    width: 13.1%;
+    top: 28.17%;
+    right: 24.87%;
+    bottom: 60.58%;
+    left: 62.03%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.component4 {
+    position: absolute;
+    top: 491px;
+    left: -253px;
+    width: 778.6px;
+    height: 775.3px;
+}
+.youreASuperstar {
+    position: absolute;
+    top: 306px;
+    left: 406px;
+    font-size: 40px;
+    font-family: 'MS PGothic';
+    text-align: center;
+    display: inline-block;
+    width: 750px;
+    height: 42px;
+}
+.choosecategoryChild {
+    position: absolute;
+    top: 532px;
+    left: 2686px;
+    width: 134px;
+    height: 134px;
+}
+.choosecategoryItem {
+    position: absolute;
+    top: 428px;
+    left: 885px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 125px;
+    height: 125px;
+}
+.ellipseDiv {
+    position: absolute;
+    top: 569px;
+    left: 556px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 125px;
+    height: 125px;
+}
+.choosecategoryChild1 {
+    position: absolute;
+    top: 569px;
+    left: 720px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 125px;
+    height: 125px;
+}
+.choosecategoryChild2 {
+    position: absolute;
+    top: 569px;
+    left: 884px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 125px;
+    height: 125px;
+}
+.broomIcon {
+    position: absolute;
+    height: 73.6%;
+    width: 58.23%;
+    top: 26.4%;
+    right: 23.42%;
+    bottom: 0%;
+    left: 18.35%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.chores {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.broomParent {
+    position: absolute;
+    height: 12.21%;
+    width: 10.97%;
+    top: 54.69%;
+    right: 51.25%;
+    bottom: 33.11%;
+    left: 37.78%;
+    cursor: pointer;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component11 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1424px;
+    height: 217px;
+    font-size: 32px;
+    font-family: 'Zen Maru Gothic';
+}
+.groupItem {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 125px;
+    height: 125px;
+}
+.tech {
+    position: absolute;
+    top: 0px;
+    left: 12px;
+}
+.groupContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 125px;
+    height: 135px;
+}
+.monitorIcon {
+    position: absolute;
+    height: 50.37%;
+    width: 54.4%;
+    top: 35.56%;
+    right: 22.4%;
+    bottom: 14.07%;
+    left: 23.2%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupParent {
+    position: absolute;
+    top: 418px;
+    left: 557px;
+    width: 125px;
+    height: 135px;
+    cursor: pointer;
+}
+.groupInner {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 125px;
+    height: 125px;
+}
+.shop {
+    position: absolute;
+    top: 0px;
+    left: 13px;
+}
+.shoppingCartIcon {
+    position: absolute;
+    height: 59.26%;
+    width: 64%;
+    top: 29.63%;
+    right: 15.2%;
+    bottom: 11.11%;
+    left: 20.8%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupDiv {
+    position: absolute;
+    top: 418px;
+    left: 721px;
+    width: 125px;
+    height: 135px;
+    cursor: pointer;
+}
+.petIcon {
+    position: absolute;
+    height: 72.5%;
+    width: 93.55%;
+    top: 27.5%;
+    right: 0%;
+    bottom: 0%;
+    left: 6.45%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.petsParent {
+    position: absolute;
+    top: 418px;
+    left: 901px;
+    width: 93px;
+    height: 120px;
+    cursor: pointer;
+}
+.lovelyIcon {
+    position: absolute;
+    height: 67.97%;
+    width: 84.47%;
+    top: 32.03%;
+    right: 8.74%;
+    bottom: 0%;
+    left: 6.8%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.chatParent {
+    position: absolute;
+    top: 560px;
+    left: 732px;
+    width: 103px;
+    height: 128px;
+    cursor: pointer;
+}
+.drivingIcon {
+    position: absolute;
+    height: 67.2%;
+    width: 93.33%;
+    top: 32.8%;
+    right: 4.44%;
+    bottom: 0%;
+    left: 2.22%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.rideParent {
+    position: absolute;
+    top: 560px;
+    left: 904px;
+    width: 90px;
+    height: 125px;
+    cursor: pointer;
+}
+.choosecategory {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 36px;
+    color: #000;
+    font-family: 'Myanmar Khyay';
+}
+

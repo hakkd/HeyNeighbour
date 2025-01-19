@@ -1,0 +1,175 @@
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+    width: 1001px;
+    height: 477px;
+}
+.signupthreeInner {
+    position: absolute;
+    top: 273px;
+    left: 280px;
+    width: 1001px;
+    height: 477px;
+}
+.vectorIcon {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.faceLIcon {
+    position: absolute;
+    height: 11.25%;
+    width: 13.1%;
+    top: 28.17%;
+    right: 24.87%;
+    bottom: 60.58%;
+    left: 62.03%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.component4 {
+    position: absolute;
+    top: 491px;
+    left: -253px;
+    width: 778.6px;
+    height: 775.3px;
+}
+.password {
+    position: absolute;
+    top: 469px;
+    left: 345px;
+    display: inline-block;
+    width: 348px;
+    height: 68px;
+}
+.confirm {
+    position: absolute;
+    top: 546px;
+    left: 345px;
+    display: inline-block;
+    width: 300px;
+    height: 68px;
+}
+.andNowInput {
+    position: absolute;
+    top: 418px;
+    left: 452px;
+    font-size: 40px;
+    font-family: 'MS PGothic';
+    text-align: center;
+    display: inline-block;
+    width: 740px;
+    height: 42px;
+}
+.signupthreeChild {
+    position: absolute;
+    top: 532px;
+    left: 2686px;
+    width: 134px;
+    height: 134px;
+}
+.component5Icon {
+    position: absolute;
+    top: 666px;
+    left: 1111px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+}
+.signupthreeItem {
+    position: absolute;
+    top: 473px;
+    left: 712px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 438px;
+    height: 64px;
+}
+.rectangleDiv {
+    position: absolute;
+    top: 552px;
+    left: 712px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 438px;
+    height: 64px;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component15 {
+    position: absolute;
+    height: 21.19%;
+    width: 98.89%;
+    top: 0%;
+    right: 1.11%;
+    bottom: 78.81%;
+    left: 0%;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+}
+.signupthree {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 64px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+

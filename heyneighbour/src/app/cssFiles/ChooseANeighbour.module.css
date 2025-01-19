@@ -1,0 +1,172 @@
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+    width: 1001px;
+    height: 570px;
+}
+.component1Icon {
+    position: absolute;
+    top: 106px;
+    left: 45px;
+    width: 358px;
+    height: 358px;
+}
+.vancouverBc {
+    font-size: 32px;
+    font-family: 'MS PGothic';
+}
+.johnVancouverContainer {
+    position: absolute;
+    top: 47px;
+    left: 412px;
+}
+.hiImJohn {
+    position: absolute;
+    top: 169px;
+    left: 412px;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+    display: inline-block;
+    width: 532px;
+    height: 203px;
+}
+.rectangleParent {
+    position: absolute;
+    top: 331px;
+    left: 280px;
+    width: 1001px;
+    height: 570px;
+    font-size: 48px;
+}
+.chooseANeighbour {
+    position: absolute;
+    top: 181px;
+    left: 136px;
+    font-size: 96px;
+}
+.chooseaneighbourChild {
+    position: absolute;
+    top: 724px;
+    left: 339px;
+    width: 63px;
+    height: 63px;
+}
+.chooseaneighbourItem {
+    position: absolute;
+    top: 724px;
+    left: 402px;
+    width: 63px;
+    height: 63px;
+}
+.chooseaneighbourInner {
+    position: absolute;
+    top: 724px;
+    left: 528px;
+    width: 63px;
+    height: 63px;
+}
+.starIcon {
+    position: absolute;
+    top: 724px;
+    left: 591px;
+    width: 63px;
+    height: 63px;
+}
+.chooseaneighbourChild1 {
+    position: absolute;
+    top: 724px;
+    left: 465px;
+    width: 63px;
+    height: 63px;
+}
+.helpsWithYard {
+    position: absolute;
+    top: 429px;
+    left: 692px;
+    display: inline-block;
+    font-family: 'MS PGothic';
+    width: 517px;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component12 {
+    position: absolute;
+    height: 21.19%;
+    width: 98.89%;
+    top: 0%;
+    right: 1.11%;
+    bottom: 78.81%;
+    left: 0%;
+    font-family: 'MS PGothic';
+}
+.component21Icon {
+    position: absolute;
+    top: 787px;
+    left: 1111px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+}
+.component22Icon {
+    position: absolute;
+    top: 787px;
+    left: 927px;
+    width: 167px;
+    height: 167px;
+    cursor: pointer;
+}
+.chooseaneighbour {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 32px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+
