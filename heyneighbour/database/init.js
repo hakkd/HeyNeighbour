@@ -11,8 +11,8 @@ import fs from 'fs';
 
   await db.exec('DROP TABLE IF EXISTS userImages');
   await db.exec('CREATE TABLE IF NOT EXISTS userImages (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');
-  const image1 = fs.readFileSync('user_images/image1.jpg');
-  const image2 = fs.readFileSync('user_images/image2.jpg');
+  const image1 = fs.readFileSync('database/user_images/image1.jpg');
+  const image2 = fs.readFileSync('database/user_images/image2.jpg');
   await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [1, image1]);
   await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [2, image2]);
 
