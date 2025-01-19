@@ -1,11 +1,37 @@
-import { useCallback } from 'react';
+import { useState } from 'react';
 import styles from '../app/cssFiles/SignUpThree.module.css';
 import Link from 'next/link'
+import { useSearchParams, useRouter } from 'next/navigation';
 
-const SignUpThree = () => {
+export default function SignUpThree() {
+  const params = useSearchParams();
+  const email = params.get('email');
+  const phoneNumber = params.get('phoneNumber');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [error, setError] = useState('');
+  const router = useRouter();
 
-  const onComponentClick = useCallback(() => {
-  }, []);
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+    setError('');
+    // Redirect to the next page with email, phone number, and password
+    router.push(
+      `/SignUpFour?email=${encodeURIComponent(email)}&phoneNumber=${encodeURIComponent(phoneNumber)}&password=${encodeURIComponent(password)}`
+    );
+  };
 
   return (
     <div className={styles.signupthree}>
@@ -16,26 +42,26 @@ const SignUpThree = () => {
         <img className={styles.vectorIcon} alt="" src="../assets/red.svg" />
         <img className={styles.faceLIcon} alt="" src="../Face L.svg" />
       </div>
-      <div className={styles.password}>Password:</div>
-      <div className={styles.confirm}>Confirm:</div>
-      <div className={styles.andNowInput}>And now, input your password two times!</div>
-      <img className={styles.signupthreeChild} alt="" src="Group 8.svg" />
-      <Link href="/SignUpFour">
-      <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onComponentClick} />
-      </Link>
-      <div className={styles.signupthreeItem} />
-      <div className={styles.rectangleDiv} />
-      <div className={styles.component15}>
-      <Link href="/LandingPage">
-        <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
-        </Link>
-        <div className={styles.testimonials} onClick={onComponentClick}>TESTIMONIALS</div>
-        <div className={styles.aboutUs} onClick={onComponentClick}>ABOUT US</div>
-        <div className={styles.myProfile} onClick={onComponentClick}>MY PROFILE</div>
-      </div>
-      {/* Commit to git */}
+      <div className={styles.email}>Email: {email}</div>
+      <div className={styles.phoneNumber}>Phone Number: {phoneNumber}</div>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.password}>Password:</div>
+        <input
+          type="password"
+          value={password}
+          onChange={handlePasswordChange}
+          className={styles.passwordInput}
+        />
+        <div className={styles.confirm}>Confirm:</div>
+        <input
+          type="password"
+          value={confirmPassword}
+          onChange={handleConfirmPasswordChange}
+          className={styles.confirmPasswordInput}
+        />
+        {error && <div className={styles.error}>{error}</div>}
+        <button type="submit" className={styles.submitButton}>Submit</button>
+      </form>
     </div>
   );
-};
-
-export default SignUpThree;
+}
