@@ -15,9 +15,8 @@ export default async function assignHelper(req, res) {
 
             return res.status(200).json({ success: true, data: result });
         } catch (error) {
+            console.error('Error:', error);
             return res.status(500).json({ error: 'Failed to assign helper' });
-        } finally {
-            redirect('/addFavour');
         }
     } else {
         res.setHeader('Allow', ['POST']);
@@ -31,5 +30,5 @@ async function assignHelperToTask(helperId, title, description, date, jobType) {
     console.log('Assigning helper to task:', helperId, title, description, date, jobType);
     const db = await dbPromise;
     await db.run('INSERT INTO favours (title, description, createdBy, status, date, jobType) VALUES (?, ?, ?, ?, ?, ?)', [title, description, helperId, "assigned", date, jobType]);
-    return { helperId, favour };
+    return { helperId, title, description, date, jobType };
 }

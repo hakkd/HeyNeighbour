@@ -2,23 +2,28 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function Helpers({ postalCode, jobType }) {
   const router = useRouter();
-  useEffect(() => {
-    if (router.isReady) {
-      const { title, description, date, jobType } = router.query;
-      console.log('Query Params:', { title, description, date, jobType });
-    }
-  }, [router.isReady, router.query]);
-  const { query } = router;
+  const params = useSearchParams();
+  const title = params.get('title');
+  const description = params.get('description');
+  const date = params.get('date');
+  // console.log('Search Params:', params);
+  // useEffect(() => {
+  //   if (router.isReady) {
+  //     const { title, description, date, jobType } = router.query;
+  //     console.log('Query Params:', { title, description, date, jobType });
+  //   }
+  // }, [router.isReady, router.query]);
+  // const { query } = router;
 
-  // Safely access query parameters
-  const title = query?.title || '';
-  const description = query?.description || '';
-  const date = query?.date || '';
-  const jobTypeQuery = query?.jobType || '';
+  // // Safely access query parameters
+  // const title = query?.title || '';
+  // const description = query?.description || '';
+  // const date = query?.date || '';
+  // const jobTypeQuery = query?.jobType || '';
 
   const [helpers, setHelpers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -44,7 +49,7 @@ export default function Helpers({ postalCode, jobType }) {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ helperId, title, description, date, jobType: jobTypeQuery }),
+          body: JSON.stringify({ helperId, title, description, date, jobType }),
         });
 
         if (!response.ok) {
