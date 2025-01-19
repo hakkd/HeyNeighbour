@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.1.5",
+    "next": "^15.1.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sqlite": "^5.1.1",
@@ -17,7 +17,9 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "eslint": "^9",
-    "eslint-config-next": "15.1.5"
+    "eslint-config-next": "15.1.5",
+    "prettier": "3.4.2"
   }
 }
