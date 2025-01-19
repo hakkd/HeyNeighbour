@@ -10,7 +10,6 @@ export default function Helpers({ postalCode, jobType }) {
     async function fetchHelpers() {
       const response = await fetch(`/api/helpers?postalCode=${postalCode}&jobType=${jobType}`);
       const data = await response.json();
-      console.log(data);
       setHelpers(data);
     }
 
