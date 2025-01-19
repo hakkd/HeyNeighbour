@@ -7,7 +7,7 @@ export default function FavourCard({category, description, icon}) {
   const router = useRouter();
 
   const onGroupContainerClick = useCallback(() => {
-    router.push(`/helpers?jobType=${category}`);
+    router.push(`/ChooseANeighbour?jobType=${category}`);
   }, [category, router]);
 
   return (

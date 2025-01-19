@@ -22,7 +22,7 @@ export default function Helpers({ jobType }) {
     }
 
     fetchHelpers();
-  }, [postalCode, jobType]);
+  }, [jobType]);
 
   const handleChoose = (helperId) => {
     console.log(`Helper chosen: ${helperId}`);
