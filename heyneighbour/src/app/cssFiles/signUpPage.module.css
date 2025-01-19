@@ -1,3 +1,5 @@
+
+
 .groupChild {
     position: absolute;
     top: 0px;
@@ -5,7 +7,8 @@
     border-radius: 59px;
     background-color: #f0f0f0;
     width: 1001px;
-    height: 477px;
+    height: 300px;
+    overflow: hidden;
   }
   .registration1Inner {
     position: absolute;
@@ -14,11 +17,27 @@
     width: 1001px;
     height: 477px;
   }
+
+  .faceLIcon {
+    position: absolute;
+    height: 11.25%;
+    width: 13.1%;
+    top: 2px;
+    right: 24.87%;
+    bottom: 60.58%;
+    left: 68.03%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+
+
+
   .vectorIcon {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0%;
+    top: -200px;
     right: 0%;
     bottom: 0%;
     left: 0%;
@@ -27,18 +46,7 @@
     max-height: 100%;
     object-fit: contain;
   }
-  .faceLIcon {
-    position: absolute;
-    height: 11.25%;
-    width: 13.1%;
-    top: 28.17%;
-    right: 24.87%;
-    bottom: 60.58%;
-    left: 62.03%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-  }
+  
   .component4 {
     position: absolute;
     top: 491px;
@@ -48,7 +56,7 @@
   }
   .areYouHere {
     position: absolute;
-    top: 466px;
+    top: 370px;
     left: 452px;
     display: inline-block;
     width: 745px;
@@ -57,7 +65,7 @@
   
   .letsGetStarted {
     position: absolute;
-    top: 418px;
+    top: 300px;
     left: 658px;
     font-size: 40px;
     display: inline-block;
@@ -66,10 +74,10 @@
   }
   .component6Icon {
     position: absolute;
-    top: 666px;
+    top: 450px;
     left: 924px;
     width: 167px;
-    height: 167px;
+    height: 300px;
     cursor: pointer;
   }
   .registration1Child {
@@ -81,20 +89,20 @@
   }
   .component5Icon {
     position: absolute;
-    top: 666px;
+    top: 450px;
     left: 1111px;
     width: 167px;
-    height: 167px;
+    height: 300px;
     cursor: pointer;
   }
   .textLogo {
     position: absolute;
-    height: 100%;
-    width: 23.77%;
-    top: 0%;
-    right: 76.23%;
+    height: 70%;
+    width: 10%;
+    top: 10px;
+    right: .23%;
     bottom: 0%;
-    left: 0%;
+    left: 20px;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;
@@ -123,7 +131,7 @@
     height: 13.36%;
     width: 15.38%;
     top: 26.73%;
-    left: 84.62%;
+    left: 90.62%;
     font-weight: 900;
     color: #ef476f;
     display: inline-block;
@@ -132,11 +140,11 @@
     position: absolute;
     height: 21.19%;
     width: 98.89%;
-    top: 0%;
+    top: -30px;
     right: 1.11%;
     bottom: 78.81%;
     left: 0%;
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Zen Maru Gothic';
   }
   .registration1 {
@@ -149,5 +157,9 @@
     font-size: 64px;
     color: #000;
     font-family: 'MS PGothic';
+    position: relative;
+    overflow: hidden; /* Ensure the parent container hides overflow */
+    max-height: 100vh;
+    
   }
   
