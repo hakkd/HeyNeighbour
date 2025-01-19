@@ -18,7 +18,7 @@ const SignUpPage = () => {
         				<img className={styles.faceLIcon} alt="" src="Face L.svg" />
       			</div>
       			<div className={styles.areYouHere}>Are you here to get help?</div>
-        				<div className={styles.letsGetStarted}>Let’s get started...</div>
+        				<div className={styles.letsGetStarted}>Let's get started...</div>
         				<img className={styles.component6Icon} alt="" src="Component 6.svg" onClick={onComponentClick} />
         				<img className={styles.registration1Child} alt="" src="Group 8.svg" />
         				<img className={styles.component5Icon} alt="" src="Component 5.svg" onClick={onComponentClick} />
