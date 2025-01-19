@@ -36,7 +36,7 @@ export default function Favours({ postalCode }) {
       },
       body: JSON.stringify({ favorId }),
     });
-    setFavors((prevFavors) =>
+    setfavours((prevFavors) =>
       prevFavors.map((favor) =>
         favor.id === favorId ? { ...favor, status: 'open', userId: null } : favor
       )
