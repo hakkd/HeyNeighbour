@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useRouter} from 'next/navigation';
 
 const AddFavour = () => {
     const [favour, setFavour] = useState({
@@ -15,12 +16,16 @@ const AddFavour = () => {
         });
     };
 
+    const Router = useRouter();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add logic to handle form submission
         console.log('Favour submitted:', favour);
-        // redirect to the helpers page
-        Router.push('/helpers');        
+        // redirect to the helpers page and pass favour params
+        Router.push({
+            pathname: '/helpers',
+            query: { favour: JSON.stringify(favour) },
+        });
     };
 
     return (
