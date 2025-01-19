@@ -8,13 +8,18 @@ import dbPromise from './sqlite.js';
   await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Alice", "alice@example.com", "Canada", "A1A 1A1", 5)');
   await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("John Doe", "john.doe@example.com", "Canada", "A1A 1A1", 3)');
 
+  await db.exec('DROP TABLE IF EXISTS userImage');
+  await db.exec('CREATE TABLE IF NOT EXISTS userImage (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');
+  await db.exec('INSERT INTO userImage (userId, image) VALUES (1, "image1")');
+  await db.exec('INSERT INTO userImage (userId, image) VALUES (2, "image2")');
+
   await db.exec('DROP TABLE IF EXISTS reviews');
   await db.exec('CREATE TABLE IF NOT EXISTS reviews (id INTEGER PRIMARY KEY, userId INTEGER, rating INTEGER, comment TEXT, createdBy INTEGER)');
   await db.exec('INSERT INTO reviews (userId, rating, comment, createdBy) VALUES (1, 5, "Great user", 2)');
 
   await db.exec('DROP TABLE IF EXISTS favours');
   await db.exec('CREATE TABLE IF NOT EXISTS favours (id INTEGER PRIMARY KEY, userId INTEGER, title TEXT, description TEXT, createdBy INTEGER, status TEXT, date TEXT, assignedTo INTEGER, location TEXT, jobType TEXT)');
-  await db.exec('INSERT INTO favours (title, description, createdBy, status, date, assignedTo, location) VALUES ("Help with groceries", "I need help with groceries", 1, "open", "2021-01-01", 2, "A1A 1A1", "shopping")');
+  await db.exec('INSERT INTO favours (userId, title, description, createdBy, status, date, assignedTo, location, jobType) VALUES (1, "Help with groceries", "I need help with groceries", 1, "open", "2021-01-01", 2, "A1A 1A1", "shopping")');
   
   await db.exec('DROP TABLE IF EXISTS userTypes');
   await db.exec('CREATE TABLE IF NOT EXISTS userTypes (id INTEGER PRIMARY KEY, userId INTEGER, type TEXT)');
