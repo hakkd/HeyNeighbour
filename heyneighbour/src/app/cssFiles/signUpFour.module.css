@@ -83,13 +83,13 @@
     cursor: pointer;
 }
 .signupfourItem {
-    position: absolute;
+    /* position: absolute;
     top: 516px;
     left: 743px;
     border-radius: 23px;
     background-color: #d9d9d9;
     width: 438px;
-    height: 64px;
+    height: 64px; */
 }
 .exampleA3b2c3 {
     position: absolute;
@@ -165,5 +165,25 @@
     font-size: 64px;
     color: #000;
     font-family: 'MS PGothic';
+}
+
+.postalCodeInput {
+    position: absolute;
+    top: 520px;
+    left: 670px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 600px;
+    height: 64px;
+}
+
+.submitButton {
+    position: absolute;
+    top: 680px;
+    left: 670px;
+    border-radius: 23px;
+    background-color: #83B481;
+    width: 300px;
+    height: 40px;
 }
 

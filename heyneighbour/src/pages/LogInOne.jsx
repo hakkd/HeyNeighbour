@@ -20,13 +20,13 @@ const LogInOne = () => {
       </div>
       <div className={styles.email}>Email:</div>
       <div className={styles.welcomeBackPlease}>Welcome back! Please enter your email:</div>
-      <img className={styles.loginoneChild} alt="" src=".../Blue Blob.png" />
+      <img className={styles.loginoneChild} alt="" src=".../public/assets/faceR.svg" />
       <Link href="/LogInTwo">
       <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onTextLogoClick} />
       </Link>
       <div className={styles.loginoneItem} />
       <div className={styles.rectangleDiv} />
-      <img className={styles.blueBlobIcon} alt="" src=".../Blue Blob.png" />
+      <img className={styles.blueBlobIcon} alt="" src="../assets/green.svg" />
       {/* Commit to git */}
     </div>
   );

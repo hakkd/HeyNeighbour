@@ -56,7 +56,7 @@ export default function SignUpFour () {
       />
       <div className={styles.andFinallyEnter}>And finally, enter your postal code!</div>
       <img className={styles.signupfourChild} alt="" src="Group 8.svg" />
-      <button onClick={handleSubmit} className={styles.submitButton}>
+      <button onClick={handleSubmit} className={styles.submitButton}>Submit
         <img className={styles.component5Icon} alt="" src="../assets/component5.svg" />
       </button>
       <div className={styles.signupfourItem} />
