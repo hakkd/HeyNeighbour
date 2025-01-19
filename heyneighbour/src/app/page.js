@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Helpers from "../pages/helpers";
+import Helpers from "@/pages/helpers";
 import AddFavour from "@/pages/addFavour";
 
 export default function Home() {
   return (
-    <Helpers postalCode={"A1A 1A1"} jobType={"manual labour"}/>
+    // <Helpers postalCode={"A1A 1A1"} jobType={"manual labour"}/>
+    <AddFavour/>
   //   <div className={styles.page}>
   //     <main className={styles.main}>
   //       <Image

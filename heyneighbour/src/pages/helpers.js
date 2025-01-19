@@ -6,6 +6,12 @@ import { useRouter } from 'next/navigation';
 
 export default function Helpers({ postalCode, jobType }) {
   const router = useRouter();
+  useEffect(() => {
+    if (router.isReady) {
+      const { title, description, date, jobType } = router.query;
+      console.log('Query Params:', { title, description, date, jobType });
+    }
+  }, [router.isReady, router.query]);
   const { query } = router;
 
   // Safely access query parameters
@@ -13,8 +19,6 @@ export default function Helpers({ postalCode, jobType }) {
   const description = query?.description || '';
   const date = query?.date || '';
   const jobTypeQuery = query?.jobType || '';
-
-  console.log(title, description, date, jobTypeQuery);
 
   const [helpers, setHelpers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -32,6 +36,7 @@ export default function Helpers({ postalCode, jobType }) {
 
   const handleChoose = (helperId) => {
     console.log(`Helper chosen: ${helperId}`);
+    console.log(title)
     async function assignHelper() {
       try {
         const response = await fetch('/api/assignHelper', {
@@ -39,7 +44,7 @@ export default function Helpers({ postalCode, jobType }) {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ helperId }),
+          body: JSON.stringify({ helperId, title, description, date, jobType: jobTypeQuery }),
         });
 
         if (!response.ok) {

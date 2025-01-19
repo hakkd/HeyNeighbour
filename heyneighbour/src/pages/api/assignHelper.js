@@ -3,19 +3,14 @@ import dbPromise from '../../../database/sqlite';
 export default async function assignHelper(req, res) {
     if (req.method === 'POST') {
         console.log(req.body)
-        const { helperId } = req.body.helperId;
-        const { favour } = req.body.favour;
+        const {  helperId, title, description, date, jobType } = req.body;
         
         if (!helperId) {
             return res.status(400).json({ error: 'Helper ID is required' });
         }
 
-        if (!favour) {
-            return res.status(400).json({ error: 'Favour information is required' });
-        }
-
         try {
-            const result = await assignHelperToTask(helperId, favour);
+            const result = await assignHelperToTask(helperId, title, description, date, jobType);
 
             return res.status(200).json({ success: true, data: result });
         } catch (error) {
@@ -27,13 +22,11 @@ export default async function assignHelper(req, res) {
     }
 }
 
-async function assignHelperToTask(helperId, favour) {
+async function assignHelperToTask(helperId, title, description, date, jobType) {
     // Implement your logic to assign the helper to a task
     // This is a placeholder function
+    console.log('Assigning helper to task:', helperId, title, description, date, jobType);
     const db = await dbPromise;
-    const { title, description, date, jobType } = favour;
-    postalCode = await db.get('SELECT postalCode FROM users WHERE id = ?', [helperId]);
-    date = new Date().toISOString().split('T')[0];
-    await db.run('INSERT INTO favours (title, description, createdBy, status, date, jobType) VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id', [title, description, helperId, "assigned", date, jobType]);
-    return { helperId, taskId: 'exampleTaskId' };
+    await db.run('INSERT INTO favours (title, description, createdBy, status, date, jobType) VALUES (?, ?, ?, ?, ?, ?)', [title, description, helperId, "assigned", date, jobType]);
+    return { helperId, favour };
 }
