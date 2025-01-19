@@ -5,12 +5,13 @@ import Link from 'next/link'
 const LogInTwo = () => {
 
   const onTESTIMONIALSTextClick = useCallback(() => {
-    // Add your code here
   }, []);
 
   return (
     <div className={styles.logintwo}>
+        <Link href="/LandingPage">
       <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+      </Link>
       <div className={styles.testimonials} onClick={onTESTIMONIALSTextClick}>TESTIMONIALS</div>
       <div className={styles.aboutUs} onClick={onTESTIMONIALSTextClick}>ABOUT US</div>
       <img className={styles.logintwoChild} alt="" src="Group 8.svg" />

@@ -5,14 +5,16 @@ import Link from 'next/link'
 const Done = () => {
 
   const onTESTIMONIALSTextClick = useCallback(() => {
-    // Add your code here
   }, []);
 
   return (
     <div className={styles.done}>
       <img className={styles.doneChild} alt="" src="Group 8.svg" />
       <div className={styles.component16}>
+        
+      <Link href="/LandingPage">
         <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+        </Link>
         <div className={styles.testimonials} onClick={onTESTIMONIALSTextClick}>TESTIMONIALS</div>
         <div className={styles.aboutUs} onClick={onTESTIMONIALSTextClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onTESTIMONIALSTextClick}>MY PROFILE</div>

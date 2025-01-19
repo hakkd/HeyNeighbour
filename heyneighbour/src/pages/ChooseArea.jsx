@@ -5,7 +5,6 @@ import Link from 'next/link'
 const ChooseArea = () => {
   
   const onGroupContainerClick = useCallback(() => {
-    // Add your code here
   }, []);
   
   return (
@@ -84,7 +83,9 @@ const ChooseArea = () => {
           <img className={styles.component10Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           </Link>
           <div className={styles.component11}>
+          <Link href="/LandingPage">
             <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+            </Link>
             <div className={styles.testimonials} onClick={onGroupContainerClick}>TESTIMONIALS</div>
             <div className={styles.aboutUs} onClick={onGroupContainerClick}>ABOUT US</div>
             <div className={styles.myProfile} onClick={onGroupContainerClick}>MY PROFILE</div>

@@ -5,7 +5,6 @@ import Link from 'next/link'
 const SignUpPage = () => {
 
   const onTESTIMONIALSTextClick = useCallback(() => {
-    // Add your code here
   }, []);
 
   return (
@@ -21,7 +20,9 @@ const SignUpPage = () => {
       <div className={styles.letsGetStarted}>Let’s get started...</div>
       <img className={styles.signup1Child} alt="" src="Group 8.svg" />
       <div className={styles.component13}>
+	  <Link href="/LandingPage">
         <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+		</Link>
         <div className={styles.testimonials} onClick={onTESTIMONIALSTextClick}>TESTIMONIALS</div>
         <div className={styles.aboutUs} onClick={onTESTIMONIALSTextClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onTESTIMONIALSTextClick}>MY PROFILE</div>

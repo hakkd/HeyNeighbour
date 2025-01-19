@@ -1,3 +1,4 @@
+/* Need to commit */
 .groupChild {
     position: absolute;
     top: 0px;
@@ -178,7 +179,7 @@
     width: 1424px;
     height: 217px;
     font-size: 32px;
-    font-family: 'Zen Maru Gothic';
+    font-family: 'MS PGothic';
 }
 .groupItem {
     position: absolute;
@@ -322,6 +323,6 @@
     text-align: left;
     font-size: 36px;
     color: #000;
-    font-family: 'Myanmar Khyay';
+    font-family: 'MS PGothic';
 }
 

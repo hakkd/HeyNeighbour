@@ -10,7 +10,9 @@ const LogInOne = () => {
 
   return (
     <div className={styles.loginone}>
+        <Link href="/LandingPage">
       <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} onClick={onTextLogoClick} />
+      </Link>
       <div className={styles.testimonials} onClick={onTextLogoClick}>TESTIMONIALS</div>
       <div className={styles.aboutUs} onClick={onTextLogoClick}>ABOUT US</div>
       <div className={styles.loginoneInner}>
@@ -18,7 +20,7 @@ const LogInOne = () => {
       </div>
       <div className={styles.email}>Email:</div>
       <div className={styles.welcomeBackPlease}>Welcome back! Please enter your email:</div>
-      <img className={styles.loginoneChild} alt="" src="Group 8.svg" />
+      <img className={styles.loginoneChild} alt="" src=".../Blue Blob.png" />
       <Link href="/LogInTwo">
       <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onTextLogoClick} />
       </Link>

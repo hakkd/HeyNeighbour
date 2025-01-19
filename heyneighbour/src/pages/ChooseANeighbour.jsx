@@ -23,7 +23,9 @@ const ChooseANeighbour = () => {
       <img className={styles.chooseaneighbourChild1} alt="" src="../star.svg" />
       <b className={styles.helpsWithYard}>{`Helps with: Yard work, Errands `}</b>
       <div className={styles.component12}>
+      <Link href="/LandingPage">
         <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+        </Link>
         <div className={styles.testimonials}>TESTIMONIALS</div>
         <div className={styles.aboutUs}>ABOUT US</div>
         {/* Wrap MY PROFILE in Link component */}
@@ -31,7 +33,6 @@ const ChooseANeighbour = () => {
           <div className={styles.myProfile}>MY PROFILE</div>
         </Link>
       </div>
-      {/* Wrap component21Icon in Link component */}
       <Link href="/SubmitRequest">
         <img className={styles.component21Icon} alt="" src="../assets/component5.svg" />
       </Link>

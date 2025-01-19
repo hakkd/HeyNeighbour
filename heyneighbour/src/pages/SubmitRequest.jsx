@@ -5,7 +5,6 @@ import Link from 'next/link'
 const SubmitRequest = () => {
   	
   	const onComponentClick = useCallback(() => {
-    		// Add your code here
   	}, []);
   	
   	return (
@@ -45,7 +44,9 @@ const SubmitRequest = () => {
         				<b className={styles.to}>TO:</b>
         				<div className={styles.div}>39/100</div>
         				<div className={styles.component12}>
+                        <Link href="/LandingPage">
           					<img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+                              </Link>
           					<div className={styles.testimonials} onClick={onComponentClick}>TESTIMONIALS</div>
           					<div className={styles.aboutUs} onClick={onComponentClick}>ABOUT US</div>
           					<div className={styles.myProfile} onClick={onComponentClick}>MY PROFILE</div>
