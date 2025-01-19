@@ -1,5 +1,6 @@
 // heyneighbour/database/init.js
 import dbPromise from './sqlite.js';
+import fs from 'fs';
 
 (async () => {
   const db = await dbPromise;
@@ -8,10 +9,12 @@ import dbPromise from './sqlite.js';
   await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Alice", "alice@example.com", "Canada", "A1A 1A1", 5)');
   await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("John Doe", "john.doe@example.com", "Canada", "A1A 1A1", 3)');
 
-  await db.exec('DROP TABLE IF EXISTS userImage');
-  await db.exec('CREATE TABLE IF NOT EXISTS userImage (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');
-  await db.exec('INSERT INTO userImage (userId, image) VALUES (1, "image1")');
-  await db.exec('INSERT INTO userImage (userId, image) VALUES (2, "image2")');
+  await db.exec('DROP TABLE IF EXISTS userImages');
+  await db.exec('CREATE TABLE IF NOT EXISTS userImages (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');
+  const image1 = fs.readFileSync('user_images/image1.jpg');
+  const image2 = fs.readFileSync('user_images/image2.jpg');
+  await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [1, image1]);
+  await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [2, image2]);
 
   await db.exec('DROP TABLE IF EXISTS reviews');
   await db.exec('CREATE TABLE IF NOT EXISTS reviews (id INTEGER PRIMARY KEY, userId INTEGER, rating INTEGER, comment TEXT, createdBy INTEGER)');

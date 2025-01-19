@@ -1,4 +1,7 @@
+"use client";
+
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Helpers({ postalCode, jobType }) {
   const [helpers, setHelpers] = useState([]);
@@ -7,6 +10,7 @@ export default function Helpers({ postalCode, jobType }) {
     async function fetchHelpers() {
       const response = await fetch(`/api/helpers?postalCode=${postalCode}&jobType=${jobType}`);
       const data = await response.json();
+      console.log(data);
       setHelpers(data);
     }
 
@@ -24,13 +28,14 @@ export default function Helpers({ postalCode, jobType }) {
       <div style={{ display: 'flex', overflowX: 'scroll' }}>
         {helpers.map((helper) => (
           <div key={helper.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px', minWidth: '200px' }}>
-            <h2>{helper.name}</h2>
-            <p>Email: {helper.email}</p>
-            <p>Postal Code: {helper.postalCode}</p>
-            <p>Job Types: {helper.jobTypes}</p>
-            <p>Has Car: {helper.hasCar ? 'Yes' : 'No'}</p>
-            <button onClick={() => handleChoose(helper.id)}>Choose</button>
-          </div>
+          {helper.image && <Image src={`data:image/jpeg;base64,${helper.image}`} alt={helper.name} width={100} height={100} objectFit="cover" />}
+          <h2>{helper.name}</h2>
+          <p>Email: {helper.email}</p>
+          <p>Postal Code: {helper.postalCode}</p>
+          <p>Job Types: {helper.jobTypes}</p>
+          <p>Has Car: {helper.hasCar ? 'Yes' : 'No'}</p>
+          <button onClick={() => handleChoose(helper.id)}>Choose</button>
+        </div>
         ))}
       </div>
     </div>
