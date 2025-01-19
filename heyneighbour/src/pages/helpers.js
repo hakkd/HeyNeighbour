@@ -8,7 +8,8 @@ export default function Helpers({ postalCode, jobType }) {
   const [helpers, setHelpers] = useState([]);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-  const favour = router.query?.favour ? JSON.parse(router.query.favour) : null;
+  const favour = router.query?.favour ? JSON.parse(router.query.favour) : {};
+  console.log('Favour:', favour);
 
   useEffect(() => {
     async function fetchHelpers() {
@@ -39,6 +40,7 @@ export default function Helpers({ postalCode, jobType }) {
 
         const result = await response.json();
         console.log('Helper assigned successfully:', result);
+        router.push('/addFavour');
       } catch (error) {
         console.error('Error:', error);
       }

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import {useRouter} from 'next/navigation';
 
@@ -17,15 +19,15 @@ const AddFavour = () => {
         });
     };
 
-    const Router = useRouter();
+    const router = useRouter();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Favour submitted:', favour);
         // redirect to the helpers page and pass favour params
-        Router.push({
+        router.push({
             pathname: '/helpers',
-            query: { favour: JSON.stringify(favour) },
+            query: { favour: JSON.stringify(favour) }
         });
     };
 
