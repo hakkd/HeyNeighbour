@@ -15,8 +15,8 @@ import fs from 'fs';
 
   await db.exec('DROP TABLE IF EXISTS userImages');
   await db.exec('CREATE TABLE IF NOT EXISTS userImages (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');
-  const image1 = fs.readFileSync('user_images/image1.jpg');
-  const image2 = fs.readFileSync('user_images/image2.jpg');
+  const image1 = fs.readFileSync('database/user_images/image1.jpg');
+  const image2 = fs.readFileSync('database/user_images/image2.jpg');
   await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [1, image1]);
   await db.run('INSERT INTO userImages (userId, image) VALUES (?, ?)', [2, image2]);
 
@@ -25,8 +25,8 @@ import fs from 'fs';
   await db.exec('INSERT INTO reviews (userId, rating, comment, createdBy) VALUES (1, 5, "Great user", 2)');
 
   await db.exec('DROP TABLE IF EXISTS favours');
-  await db.exec('CREATE TABLE IF NOT EXISTS favours (id INTEGER PRIMARY KEY, userId INTEGER, title TEXT, description TEXT, createdBy INTEGER, status TEXT, date TEXT, assignedTo INTEGER, location TEXT, jobType TEXT)');
-  await db.exec('INSERT INTO favours (userId, title, description, createdBy, status, date, assignedTo, location, jobType) VALUES (1, "Help with groceries", "I need help with groceries", 1, "open", "2021-01-01", 2, "A1A 1A1", "shopping")');
+  await db.exec('CREATE TABLE IF NOT EXISTS favours (id INTEGER PRIMARY KEY, userId INTEGER, title TEXT, description TEXT, createdBy INTEGER, status TEXT, date TEXT, assignedTo INTEGER, jobType TEXT)');
+  await db.exec('INSERT INTO favours (userId, title, description, createdBy, status, date, assignedTo, jobType) VALUES (1, "Help with groceries", "I need help with groceries", 1, "open", "2021-01-01", 2, "shopping")');
   
   await db.exec('DROP TABLE IF EXISTS userTypes');
   await db.exec('CREATE TABLE IF NOT EXISTS userTypes (id INTEGER PRIMARY KEY, userId INTEGER, type TEXT)');
@@ -44,6 +44,7 @@ import fs from 'fs';
   await db.exec('CREATE TABLE IF NOT EXISTS helperInfo (id INTEGER PRIMARY KEY, userId INTEGER, jobTypes TEXT, hasCar BOOLEAN)');
   await db.exec('INSERT INTO helperInfo (userId, jobTypes, hasCar) VALUES (1, "manual labour, driving", true)');
   await db.exec('INSERT INTO helperInfo (userId, jobTypes, hasCar) VALUES (2, "handyperson, companionship", false)');
+  await db.exec('INSERT INTO helperInfo (userId, jobTypes, hasCar) VALUES (3, "manual labour, driving", true)');
 
   console.log('Database initialized');
 })();

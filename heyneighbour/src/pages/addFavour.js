@@ -1,10 +1,14 @@
+"use client";
+
 import React, { useState } from 'react';
+import {useRouter} from 'next/navigation';
 
 const AddFavour = () => {
     const [favour, setFavour] = useState({
         title: '',
         description: '',
         date: '',
+        jobType: '',
     });
 
     const handleChange = (e) => {
@@ -15,10 +19,12 @@ const AddFavour = () => {
         });
     };
 
+    const router = useRouter();
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Add logic to handle form submission
         console.log('Favour submitted:', favour);
+        router.push(`/helpers?title=${encodeURIComponent(favour.title)}&description=${encodeURIComponent(favour.description)}&date=${encodeURIComponent(favour.date)}&jobType=${encodeURIComponent(favour.jobType)}`);
     };
 
     return (
@@ -50,6 +56,22 @@ const AddFavour = () => {
                         value={favour.date}
                         onChange={handleChange}
                     />
+                </div>
+                <div>
+                    <label>Job Type:</label>
+                    <select
+                        name="jobType"
+                        value={favour.jobType}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select a job type</option>
+                        <option value="manual labour">Manual Labour</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="tech support">Tech Support</option>
+                        <option value="companionship">Companionship</option>
+                        <option value="driving">Driving</option>
+                        <option value="handyperson">Handyperson</option>
+                    </select>
                 </div>
                 <button type="submit">Add Favour</button>
             </form>
