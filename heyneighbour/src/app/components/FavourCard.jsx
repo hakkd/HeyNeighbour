@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import styles from '../app/cssFiles/FavourCard.module.css';
+import styles from '../cssFiles/FavourCard.module.css';
 import { useRouter } from 'next/navigation';
 
 
@@ -7,7 +7,7 @@ export default function FavourCard({category, description, icon}) {
   const router = useRouter();
 
   const onGroupContainerClick = useCallback(() => {
-    router.push(`/ChooseANeighbour?categoryName=${category}`);
+    router.push(`/helpers?jobType=${category}`);
   }, [category, router]);
 
   return (

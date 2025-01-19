@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 
-export default function Helpers({ postalCode, jobType }) {
+export default function Helpers({ jobType }) {
   const params = useSearchParams();
   const title = params.get('title');
   const description = params.get('description');
@@ -15,7 +15,7 @@ export default function Helpers({ postalCode, jobType }) {
 
   useEffect(() => {
     async function fetchHelpers() {
-      const response = await fetch(`/api/helpers?postalCode=${postalCode}&jobType=${jobType}`);
+      const response = await fetch(`/api/helpers?postalCode=A1A+1A1&jobType=${jobType}`);
       const data = await response.json();
       setHelpers(data);
       setLoading(false);
