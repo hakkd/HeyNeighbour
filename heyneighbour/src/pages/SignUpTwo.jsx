@@ -35,6 +35,7 @@ const SignUpTwo = () => {
         <div className={styles.testimonials} onClick={onComponentClick}>TESTIMONIALS</div>
         <div className={styles.aboutUs} onClick={onComponentClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onComponentClick}>MY PROFILE</div>
+        {/* Commit to git */}
       </div>
     </div>
   );

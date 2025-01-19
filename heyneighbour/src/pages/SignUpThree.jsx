@@ -33,6 +33,7 @@ const SignUpThree = () => {
         <div className={styles.aboutUs} onClick={onComponentClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onComponentClick}>MY PROFILE</div>
       </div>
+      {/* Commit to git */}
     </div>
   );
 };

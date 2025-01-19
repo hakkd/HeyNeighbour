@@ -27,6 +27,7 @@ const LogInOne = () => {
       <div className={styles.loginoneItem} />
       <div className={styles.rectangleDiv} />
       <img className={styles.blueBlobIcon} alt="" src=".../Blue Blob.png" />
+      {/* Commit to git */}
     </div>
   );
 };

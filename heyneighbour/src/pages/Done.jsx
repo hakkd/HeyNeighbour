@@ -28,6 +28,7 @@ const Done = () => {
         </Link>
       </div>
       <img className={styles.doneItem} alt="" src="../Group 36.svg" />
+      {/* Commit to git */}
     </div>
   );
 };

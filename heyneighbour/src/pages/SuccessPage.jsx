@@ -23,6 +23,7 @@ const SuccessPage = () => {
         <div className={styles.aboutUs} onClick={onTESTIMONIALSTextClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onTESTIMONIALSTextClick}>MY PROFILE</div>
       </div>
+      {/* Commit to git */}
     </div>
   );
 };

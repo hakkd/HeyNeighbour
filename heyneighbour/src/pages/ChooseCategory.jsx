@@ -72,6 +72,7 @@ const ChooseCategory = () => {
         <img className={styles.drivingIcon} alt="" src="Driving.svg" />
         </Link>
       </div>
+      {/* Commit to git */}
     </div>
   );
 };

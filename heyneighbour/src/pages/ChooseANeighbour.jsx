@@ -39,6 +39,7 @@ const ChooseANeighbour = () => {
       <Link href="/SorryPage">
       <img className={styles.component22Icon} alt="" src="../assets/component6.svg" />
       </Link>
+      {/* Commit to git */}
     </div>
   );
 };

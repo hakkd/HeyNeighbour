@@ -26,6 +26,7 @@ const LogInTwo = () => {
       <Link href="/ChooseArea">
       <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onTESTIMONIALSTextClick} />
       </Link>
+      {/* Commit to git */}
     </div>
   );
 };

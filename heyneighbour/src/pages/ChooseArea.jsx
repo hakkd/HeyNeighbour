@@ -92,6 +92,7 @@ const ChooseArea = () => {
           </div>
         </div>
       </div>
+      {/* Commit to git */}
     </div>
   );
 };

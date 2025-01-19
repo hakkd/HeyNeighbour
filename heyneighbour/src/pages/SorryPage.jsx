@@ -22,6 +22,7 @@ const SorryPage = () => {
         <div className={styles.testimonials} onClick={onTESTIMONIALSTextClick}>TESTIMONIALS</div>
         <div className={styles.aboutUs} onClick={onTESTIMONIALSTextClick}>ABOUT US</div>
         <div className={styles.myProfile} onClick={onTESTIMONIALSTextClick}>MY PROFILE</div>
+        {/* Commit to git */}
       </div>
     </div>
   );

@@ -30,6 +30,7 @@ const LandingPage = () => {
                     </Link>
                 {/* </div> */}
             </div>
+            {/* Commit to git */}
         </div>
     );
 };
