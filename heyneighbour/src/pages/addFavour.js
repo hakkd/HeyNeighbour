@@ -25,10 +25,17 @@ const AddFavour = () => {
         e.preventDefault();
         console.log('Favour submitted:', favour);
         // redirect to the helpers page and pass favour params
-        router.push({
-            pathname: '/helpers',
-            query: { favour: JSON.stringify(favour) }
-        });
+        // router.push({
+        //     pathname: '/helpers',
+        //     // query: { favour: JSON.stringify(favour) }
+        //     query: {
+        //         title: favour.title,
+        //         description: favour.description,
+        //         date: favour.date,
+        //         jobType: favour.jobType,
+        //     }
+        // });
+        router.push(`/helpers?title=${encodeURIComponent(favour.title)}&description=${encodeURIComponent(favour.description)}&date=${encodeURIComponent(favour.date)}&jobType=${encodeURIComponent(favour.jobType)}`);
     };
 
     return (
