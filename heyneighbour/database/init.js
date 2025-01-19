@@ -5,13 +5,13 @@ import fs from 'fs';
 (async () => {
   const db = await dbPromise;
   await db.exec('DROP TABLE IF EXISTS users');
-  await db.exec('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, country TEXT, postalCode TEXT, rating INTEGER)'); 
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Alice", "alice@example.com", "Canada", "A1A 1A1", 5)');
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("John Doe", "john.doe@example.com", "Canada", "A1A 1A1", 3)');
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Jane Smith", "jane.smith@example.com", "Canada", "A1A 1A1", 4)');
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Bob Brown", "bob.brown@example.com", "Canada", "A1A 1A1", 2)');
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Emily Davis", "emily.davis@example.com", "Canada", "A1A 1A1", 5)');
-  await db.exec('INSERT INTO users (name, email, country, postalCode, rating) VALUES ("Michael Wilson", "michael.wilson@example.com", "Canada", "A1A 1A1", 3)');
+  await db.exec('CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, email TEXT, country TEXT, postalCode TEXT, rating INTEGER, phoneNumber TEXT)');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("Alice", "alice@example.com", "Canada", "A1A 1A1", 5, "123-456-7890")');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("John Doe", "john.doe@example.com", "Canada", "A1A 1A1", 3, "123-456-7890")');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("Jane Smith", "jane.smith@example.com", "Canada", "A1A 1A1", 4, "123-456-7890")');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("Bob Brown", "bob.brown@example.com", "Canada", "A1A 1A1", 2, "123-456-7890")');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("Emily Davis", "emily.davis@example.com", "Canada", "A1A 1A1", 5, "123-456-7890")');
+  await db.exec('INSERT INTO users (name, email, country, postalCode, rating, phoneNumber) VALUES ("Michael Wilson", "michael.wilson@example.com", "Canada", "A1A 1A1", 3, "123-456-7890")');
 
   await db.exec('DROP TABLE IF EXISTS userImages');
   await db.exec('CREATE TABLE IF NOT EXISTS userImages (id INTEGER PRIMARY KEY, userId INTEGER, image BLOB)');

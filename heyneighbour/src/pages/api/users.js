@@ -7,8 +7,8 @@ export default async function handler(req, res) {
     const users = await db.all('SELECT * FROM users');
     res.status(200).json(users);
   } else if (req.method === 'POST') {
-    const { name, email, postalcode, usertype} = req.body;
-    await db.run('INSERT INTO users (name, email, postalcode) VALUES (?, ?, ?)', [name, email, postalcode]);
+    const { name, email, postalcode, phonenumber, usertype} = req.body;
+    await db.run('INSERT INTO users (name, email, postalcode, phoneNumber) VALUES (?, ?, ?, ?)', [name, email, postalcode, phonenumber]);
     await db.run('INSERT INTO userTypes (userId, type) VALUES ((SELECT id FROM users WHERE email = ?), ?)', [email, usertype]);
     res.status(201).json({ message: 'User added' });
   } else {
