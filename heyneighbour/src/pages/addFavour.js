@@ -19,6 +19,8 @@ const AddFavour = () => {
         e.preventDefault();
         // Add logic to handle form submission
         console.log('Favour submitted:', favour);
+        // redirect to the helpers page
+        Router.push('/helpers');        
     };
 
     return (
