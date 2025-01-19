@@ -6,6 +6,7 @@ const AddFavour = () => {
         title: '',
         description: '',
         date: '',
+        jobType: '',
     });
 
     const handleChange = (e) => {
@@ -57,6 +58,22 @@ const AddFavour = () => {
                         value={favour.date}
                         onChange={handleChange}
                     />
+                </div>
+                <div>
+                    <label>Job Type:</label>
+                    <select
+                        name="jobType"
+                        value={favour.jobType}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select a job type</option>
+                        <option value="manual labour">Manual Labour</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="tech support">Tech Support</option>
+                        <option value="companionship">Companionship</option>
+                        <option value="driving">Driving</option>
+                        <option value="handyperson">Handyperson</option>
+                    </select>
                 </div>
                 <button type="submit">Add Favour</button>
             </form>
