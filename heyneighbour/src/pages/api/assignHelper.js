@@ -1,3 +1,4 @@
+import { redirect } from 'next/dist/server/api-utils';
 import dbPromise from '../../../database/sqlite';
 
 export default async function assignHelper(req, res) {
@@ -15,6 +16,8 @@ export default async function assignHelper(req, res) {
             return res.status(200).json({ success: true, data: result });
         } catch (error) {
             return res.status(500).json({ error: 'Failed to assign helper' });
+        } finally {
+            redirect('/addFavour');
         }
     } else {
         res.setHeader('Allow', ['POST']);
