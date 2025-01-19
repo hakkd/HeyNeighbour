@@ -1,18 +1,36 @@
 import { useCallback } from 'react';
 import styles from '../app/cssFiles/ChooseArea.module.css';
 import Link from 'next/link'
+import FavourCard from './FavourCard';
 
 const ChooseArea = () => {
   
   const onGroupContainerClick = useCallback(() => {
   }, []);
-  
+
+  const categories = [
+    { category: "Tech Support", description: "Struggling with tech? From setting up your devices to troubleshooting software issues, our tech experts are here to make technology simple and stress-free.", icon: "../Monitor.svg" },
+    { category: "Shopping & Groceries", description: "Need help with shopping or groceries? Our helpers can assist you with your shopping needs.", icon: "../Shopping Cart.svg" },
+    { category: "Chores & Cleaning", description: "Need help with chores or cleaning? Our helpers can assist you with your household tasks.", icon: "../Broom.svg" },
+    { category: "Pet Care", description: "Need help with pet care? Our helpers can assist you with taking care of your pets.", icon: "../Pet.svg" },
+    { category: "Chat & Companionship", description: "Need someone to talk to? Our helpers can provide you with companionship and a friendly chat.", icon: "../Lovely.svg" },
+    { category: "Riding Service", description: "Need a ride? Our helpers can provide you with transportation services.", icon: "../Driving.svg" },
+  ]
+
   return (
     <div className={styles.choosearea}>
-      <div className={styles.whatAreaDo}>What area do you need help with?</div>
       <div className={styles.chooseareaInner}>
-        <div className={styles.groupParent}>
-          <div className={styles.groupContainer} onClick={onGroupContainerClick}>
+          <div className={styles.groupParent}>
+          <div className={styles.whatAreaDo}>What area do you need help with?</div>
+          {categories.map((item, index) => (
+            <FavourCard
+              key={index}
+              category={item.category}
+              description={item.description}
+              icon={item.icon}
+            />
+          ))}
+          {/* <div className={styles.groupContainer} onClick={onGroupContainerClick}>
             <div className={styles.rectangleParent}>
               <div className={styles.groupChild} />
               <div className={styles.technology}>{`TECHNOLOGY `}</div>
@@ -21,7 +39,7 @@ const ChooseArea = () => {
             <img className={styles.groupItem} alt="" src="../Rectangle 11.svg" />
             <img className={styles.monitorIcon} alt="" src="../Monitor.svg" />
           </div>
-          <div className={styles.groupDiv}>
+          <div className={styles.groupContainer}>
             <div className={styles.rectangleParent}>
               <div className={styles.groupChild} />
               <div className={styles.shoppingAndGroceries}>SHOPPING AND GROCERIES</div>
@@ -73,15 +91,15 @@ const ChooseArea = () => {
               </div>
             </div>
             <img className={styles.drivingIcon} alt="" src="../Driving.svg" />
-          </div>
-          <Link href="/ChooseANeighbour">
+          </div> */}
+          {/* <Link href="/ChooseANeighbour">
           <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           <img className={styles.component6Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           <img className={styles.component7Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           <img className={styles.component8Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           <img className={styles.component9Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
           <img className={styles.component10Icon} alt="" src="../assets/component5.svg" onClick={onGroupContainerClick} />
-          </Link>
+          </Link> */}
           <div className={styles.component11}>
           <Link href="/LandingPage">
             <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />

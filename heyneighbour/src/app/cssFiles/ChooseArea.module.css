@@ -1,11 +1,11 @@
 /* Need to commit to git */
-.whatAreaDo {
+/* .whatAreaDo {
     position: absolute;
     top: 181px;
     left: 136px;
     display: inline-block;
     width: 1076px;
-}
+} */
 .groupChild {
     position: absolute;
     height: 100%;
@@ -129,6 +129,7 @@
     bottom: 33.98%;
     left: 0%;
 }
+
 .petIcon {
     position: absolute;
     height: 60.71%;
@@ -341,7 +342,7 @@
     font-size: 48px;
     font-family: 'MS PGothic';
 }
-.choosearea {
+/* .choosearea {
     width: 100%;
     position: relative;
     background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
@@ -351,5 +352,41 @@
     font-size: 64px;
     color: #000;
     font-family: 'MS PGothic';
-}
+} */
+.choosearea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 64px;
+    color: #000;
+    font-family: 'MS PGothic';
+  }
+
+  .whatAreaDo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .chooseareaInner {
+    display: flex;
+    flex-direction: column; /* Ensure the children stack vertically */
+    width: 100%; /* Ensure the container takes up the full width */
+  }
+  
+  .groupParent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column; /* Ensure the children stack vertically */
+    width: 100%; /* Ensure the container takes up the full width */
+  }
 
