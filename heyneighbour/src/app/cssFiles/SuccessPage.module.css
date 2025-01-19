@@ -1,0 +1,116 @@
+/* Need to commit to git */
+.thankYou {
+    position: absolute;
+    top: 373px;
+    left: 516px;
+}
+.successpageChild {
+    position: absolute;
+    top: 710px;
+    left: -181px;
+    border-radius: 50%;
+    background-color: #06d6a0;
+    width: 1916px;
+    height: 515px;
+}
+.successpageItem {
+    position: absolute;
+    top: 820px;
+    left: 562px;
+    border-radius: 50%;
+    background-color: #000;
+    width: 51px;
+    height: 51px;
+}
+.successpageInner {
+    position: absolute;
+    top: 820px;
+    left: 953px;
+    border-radius: 50%;
+    background-color: #000;
+    width: 51px;
+    height: 51px;
+}
+.vectorIcon {
+    position: absolute;
+    top: 912px;
+    left: 683.5px;
+    width: 203.5px;
+    height: 63.2px;
+}
+.yourRequestHas {
+    position: absolute;
+    top: 487px;
+    left: 313px;
+    font-size: 64px;
+    font-family: 'MS PGothic';
+    text-align: center;
+    display: inline-block;
+    width: 928px;
+    height: 64px;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component13 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1424px;
+    height: 217px;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+}
+.successpage {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 96px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+

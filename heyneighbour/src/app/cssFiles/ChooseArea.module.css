@@ -1,0 +1,355 @@
+/* Need to commit to git */
+.whatAreaDo {
+    position: absolute;
+    top: 181px;
+    left: 136px;
+    display: inline-block;
+    width: 1076px;
+}
+.groupChild {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 59px;
+    background-color: #f0f0f0;
+}
+.technology {
+    position: absolute;
+    height: 16.73%;
+    width: 34.06%;
+    top: 10.48%;
+    left: 41.16%;
+    display: inline-block;
+}
+.strugglingWithTech {
+    position: absolute;
+    height: 45.27%;
+    width: 53.14%;
+    top: 34.82%;
+    left: 41.12%;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+    display: inline-block;
+}
+.rectangleParent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+.groupItem {
+    position: absolute;
+    height: 83.63%;
+    width: 32.33%;
+    top: 8.33%;
+    right: 64.82%;
+    bottom: 8.04%;
+    left: 2.85%;
+    border-radius: 62px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.monitorIcon {
+    position: absolute;
+    height: 61.31%;
+    width: 16.78%;
+    top: 18.75%;
+    right: 73.7%;
+    bottom: 19.94%;
+    left: 9.53%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupContainer {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 84.94%;
+    left: 0%;
+    cursor: pointer;
+}
+.shoppingAndGroceries {
+    position: absolute;
+    height: 16.67%;
+    width: 49.84%;
+    top: 10.42%;
+    left: 41.12%;
+    display: inline-block;
+}
+.shoppingCartIcon {
+    position: absolute;
+    height: 61.61%;
+    width: 16.86%;
+    top: 24.11%;
+    right: 73.7%;
+    bottom: 14.29%;
+    left: 9.45%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupDiv {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 16.99%;
+    right: 0%;
+    bottom: 67.95%;
+    left: 0%;
+}
+.lovelyIcon {
+    position: absolute;
+    height: 58.63%;
+    width: 16.04%;
+    top: 24.4%;
+    right: 73.7%;
+    bottom: 16.96%;
+    left: 10.26%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupParent1 {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 50.96%;
+    right: 0%;
+    bottom: 33.98%;
+    left: 0%;
+}
+.petIcon {
+    position: absolute;
+    height: 60.71%;
+    width: 16.61%;
+    top: 19.64%;
+    right: 72.64%;
+    bottom: 19.64%;
+    left: 10.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupParent2 {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 33.98%;
+    right: 0%;
+    bottom: 50.96%;
+    left: 0%;
+}
+.broomIcon {
+    position: absolute;
+    height: 58.93%;
+    width: 16.12%;
+    top: 18.75%;
+    right: 72.88%;
+    bottom: 22.32%;
+    left: 10.99%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupParent4 {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 67.95%;
+    right: 0%;
+    bottom: 16.99%;
+    left: 0%;
+}
+.drivingIcon {
+    position: absolute;
+    height: 66.96%;
+    width: 18.32%;
+    top: 16.67%;
+    right: 71.82%;
+    bottom: 16.37%;
+    left: 9.85%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.groupParent6 {
+    position: absolute;
+    height: 15.06%;
+    width: 100%;
+    top: 84.94%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+}
+.component5Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: -1.97%;
+    right: -1.06%;
+    bottom: 96.41%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.component6Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: 15.06%;
+    right: -1.06%;
+    bottom: 79.38%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.component7Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: 32.99%;
+    right: -1.06%;
+    bottom: 61.45%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.component8Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: 50.47%;
+    right: -1.06%;
+    bottom: 43.97%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.component9Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: 66.97%;
+    right: -1.06%;
+    bottom: 27.48%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.component10Icon {
+    position: absolute;
+    height: 5.56%;
+    width: 10.1%;
+    top: 83.46%;
+    right: -1.06%;
+    bottom: 10.98%;
+    left: 90.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+.textLogo {
+    position: absolute;
+    height: 100%;
+    width: 23.77%;
+    top: 0%;
+    right: 76.23%;
+    bottom: 0%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.testimonials {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 21.63%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.aboutUs {
+    position: absolute;
+    height: 13.36%;
+    width: 19.87%;
+    top: 30.88%;
+    left: 39.54%;
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+}
+.myProfile {
+    position: absolute;
+    height: 13.36%;
+    width: 15.38%;
+    top: 26.73%;
+    left: 84.62%;
+    font-weight: 900;
+    color: #ef476f;
+    display: inline-block;
+    cursor: pointer;
+}
+.component11 {
+    position: absolute;
+    height: 9.73%;
+    width: 115.96%;
+    top: -13.49%;
+    right: -7.25%;
+    bottom: 103.77%;
+    left: -8.71%;
+    font-size: 32px;
+    font-family: 'MS PGothic';
+}
+.groupParent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1228px;
+    height: 2231px;
+}
+.chooseareaInner {
+    position: absolute;
+    top: 283px;
+    left: 106px;
+    width: 1228px;
+    height: 2231px;
+    font-size: 48px;
+    font-family: 'MS PGothic';
+}
+.choosearea {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#fff, #fff), linear-gradient(#2660a4, #2660a4), linear-gradient(#0d0a0b, #0d0a0b), linear-gradient(#06d6a0, #06d6a0), linear-gradient(#ffd166, #ffd166), #ef476f;
+    height: 1024px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 64px;
+    color: #000;
+    font-family: 'MS PGothic';
+}
+
