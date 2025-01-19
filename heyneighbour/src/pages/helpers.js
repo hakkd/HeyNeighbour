@@ -2,28 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 
 export default function Helpers({ postalCode, jobType }) {
-  const router = useRouter();
   const params = useSearchParams();
   const title = params.get('title');
   const description = params.get('description');
   const date = params.get('date');
-  // console.log('Search Params:', params);
-  // useEffect(() => {
-  //   if (router.isReady) {
-  //     const { title, description, date, jobType } = router.query;
-  //     console.log('Query Params:', { title, description, date, jobType });
-  //   }
-  // }, [router.isReady, router.query]);
-  // const { query } = router;
-
-  // // Safely access query parameters
-  // const title = query?.title || '';
-  // const description = query?.description || '';
-  // const date = query?.date || '';
-  // const jobTypeQuery = query?.jobType || '';
 
   const [helpers, setHelpers] = useState([]);
   const [loading, setLoading] = useState(true);
