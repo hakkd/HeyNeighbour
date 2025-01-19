@@ -13,14 +13,51 @@ export default function Favours({ postalCode }) {
     fetchfavours();
   }, [postalCode]);
 
+  const handleAccept = async (favorId) => {
+    await fetch('/api/favors', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ favorId, userId }),
+    });
+    setFavors((prevFavors) =>
+      prevFavors.map((favor) =>
+        favor.id === favorId ? { ...favor, status: 'accepted', userId } : favor
+      )
+    );
+  };
+
+  const handleCancel = async (favorId) => {
+    await fetch('/api/favors', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ favorId }),
+    });
+    setFavors((prevFavors) =>
+      prevFavors.map((favor) =>
+        favor.id === favorId ? { ...favor, status: 'open', userId: null } : favor
+      )
+    );
+  };
+
   return (
     <div>
-      <h1>Open favours in Your Area</h1>
+      <h1>Open Favors in Your Area</h1>
       <ul>
-        {favours.map((favour) => (
-          <li key={favour.id}>
-            <h2>{favour.title}</h2>
-            <p>{favour.description}</p>
+        {favors.map((favor) => (
+          <li key={favor.id}>
+            <h2>{favor.title}</h2>
+            <p>{favor.description}</p>
+            {favor.status === 'open' ? (
+              <button onClick={() => handleAccept(favor.id)}>Accept</button>
+            ) : favor.userId === userId ? (
+              <button onClick={() => handleCancel(favor.id)}>Cancel</button>
+            ) : (
+              <p>Accepted by another user</p>
+            )}
           </li>
         ))}
       </ul>
@@ -36,6 +73,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       postalCode,
+      userId,
     },
   };
 }
