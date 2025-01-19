@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:export-filename="redBlob.svg"
+     inkscape:export-xdpi="300"
+     inkscape:export-ydpi="300"><g
+       style="fill:none"
+       id="g2"
+       transform="matrix(0.26458333,0,0,0.26458333,59.928716,34.530603)"><path
+         d="M 556.219,245.706 C 564.278,328.638 475.401,378.297 420.548,441.188 363.703,506.361 325.894,605.599 239.605,608.712 149.089,611.978 78.1281,533.234 32.3465,455.193 -8.69401,385.234 -5.50641,303.234 14.1359,224.371 35.198,139.808 62.3513,45.1006 142.822,11.6418 223.503,-21.9049 308.646,27.4158 384.513,70.3716 459.414,112.78 547.884,159.929 556.219,245.706 Z"
+         fill="#06d6a0"
+         id="path1" /></g><g
+       style="fill:none"
+       id="g3"
+       transform="matrix(0.26458333,0,0,0.26458333,76.103023,68.434253)"><circle
+         cx="10.5"
+         cy="10.5"
+         r="10.5"
+         fill="#000000"
+         id="circle1" /><circle
+         cx="91.5"
+         cy="13.5"
+         r="10.5"
+         fill="#000000"
+         id="circle2" /><path
+         d="M 13.4275,55 C 22.27,79.5882 30.7691,85.9569 50.9836,86.7268 70.4189,85.7087 78.6264,79.217 87.975,56.0212"
+         stroke="#000000"
+         stroke-width="7"
+         stroke-linecap="round"
+         id="path2" /></g></g></svg>
