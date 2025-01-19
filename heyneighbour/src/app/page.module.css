@@ -113,60 +113,59 @@ html, body {
   height: 374.7px;
   object-fit: contain;
 }
-.signUpButtonChild {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 22px;
-  background-color: #c7def9;
-  border: 3px solid #000;
-  box-sizing: border-box;
-  width: 259px;
-  height: 105px;
-}
-.signUp {
-  position: absolute;
-  top: calc(50% - 32.5px);
-  left: calc(50% - 92.5px);
-}
-.signUpButton {
-  width: 259px;
-  position: relative;
-  height: 105px;
-}
-.loginButtonChild {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 22px;
-  background-color: #c7def9;
-  border: 3px solid #000;
-  box-sizing: border-box;
-  width: 255px;
-  height: 103px;
-}
-.logIn {
-  position: absolute;
-  top: calc(50% - 32.5px);
-  left: calc(50% - 74.5px);
-}
-.loginButton {
-  width: 255px;
-  position: relative;
-  height: 103px;
-}
+
 .signUpButtonParent {
   position: absolute;
   top: 600px;
   left: calc(50% - 312px);
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 111px;
-  font-size: 50px;
-  font-family: Lalezar;
+  justify-content: space-evenly;
 }
+
+.signUp {
+  position: absolute;
+  top: calc(50% - 32.5px);
+  left: calc(50% - 92.5px);
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  font-family: Lalezar;
+  cursor: pointer;
+  border-radius: 22px;
+  background-color: #c7def9;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  width: 259px;
+  height: 105px;
+}
+
+.signUp:hover {
+  background-color: #8bc0ff;
+}
+
+
+.logIn {
+  position: absolute;
+  top: calc(50% - 32.5px);
+  left: calc(50% + 450.5px);
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  font-family: Lalezar;
+  border-radius: 22px;
+  cursor: pointer;
+  background-color: #c7def9;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  width: 259px;
+  height: 105px;
+}
+
+.logIn:hover {
+  background-color: #8bc0ff;
+}
+
 .landingPage {
   width: 100%;
   position: relative;
@@ -178,4 +177,3 @@ html, body {
   color: #000;
   font-family: 'MS PGothic';
 }
-
