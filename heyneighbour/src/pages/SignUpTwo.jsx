@@ -1,11 +1,18 @@
-import { useCallback } from 'react';
+import { useState } from 'react';
+import Link from 'next/link';
 import styles from '../app/cssFiles/SignUpTwo.module.css';
-import Link from 'next/link'
 
-const SignUpTwo = () => {
+export default function SignUpTwo() {
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
 
-  const onComponentClick = useCallback(() => {
-  }, []);
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    setPhoneNumber(e.target.value);
+  };
 
   return (
     <div className={styles.signuptwo}>
@@ -21,24 +28,34 @@ const SignUpTwo = () => {
         <p className={styles.phone}>Phone</p>
         <p className={styles.phone}>Number:</p>
       </div>
-      <div className={styles.awesomePleaseInput}>Awesome! Please input your email and phone number:</div>
+      <div className={styles.awesomePleaseInput}>
+        Awesome! Please input your email and phone number:
+      </div>
       <img className={styles.signuptwoChild} alt="" src="Group 8.svg" />
-      <Link href="/SignUpThree">
-      <img className={styles.component5Icon} alt="" src="../assets/component5.svg" onClick={onComponentClick} />
+      <Link href={`/SignUpThree?email=${encodeURIComponent(email)}&phoneNumber=${encodeURIComponent(phoneNumber)}`}>
+        <img className={styles.component5Icon} alt="" src="../assets/component5.svg" />
       </Link>
-      <div className={styles.signuptwoItem} />
-      <div className={styles.rectangleDiv} />
+      <div className={styles.signuptwoItem}>
+        <input
+          type="email"
+          value={email}
+          onChange={handleEmailChange}
+          className={styles.emailInput}
+        />
+      </div>
+      <div className={styles.rectangleDiv}>
+        <input
+          type="tel"
+          value={phoneNumber}
+          onChange={handlePhoneNumberChange}
+          className={styles.phoneNumberInput}
+        />
+      </div>
       <div className={styles.component14}>
-      <Link href="/LandingPage">
-        <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
+        <Link href="/LandingPage">
+          <img className={styles.textLogo} alt="" src={`../assets/logo.svg`} />
         </Link>
-        <div className={styles.testimonials} onClick={onComponentClick}>TESTIMONIALS</div>
-        <div className={styles.aboutUs} onClick={onComponentClick}>ABOUT US</div>
-        <div className={styles.myProfile} onClick={onComponentClick}>MY PROFILE</div>
-        {/* Commit to git */}
       </div>
     </div>
   );
-};
-
-export default SignUpTwo;
+}

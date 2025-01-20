@@ -179,3 +179,23 @@
     font-family: 'MS PGothic';
 }
 
+.emailInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 523px;
+    height: 64px;
+}
+
+.phoneNumberInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 23px;
+    background-color: #d9d9d9;
+    width: 523px;
+    height: 64px;
+}
+
